@@ -1,0 +1,707 @@
+body{                               /*estilo del body*/
+    background-color: #e5d8cd;  /*Color de fondo*/
+    margin: 0%;
+}
+
+.primerDiv{                         /*estilo del contenedor del navbar*/
+    background-color:   #e5d8cd;                 /*Color de fondo del div*/
+    display: grid;                                   /*Añado el grid al div*/   
+    grid-template-columns: 1fr 7fr;                     /*organiza los tamaños del los div horizontalmente*/
+    gap: 0px;                                         /*espcio entre los dos div*/
+    width: 100%;                                       /*ancho del div*/
+    height: 110px;                                       /*altura del div*/
+    position: fixed;                                /*fija la cabecera*/
+    z-index: 1000;                                      /*asegura que este por encima de otro elemento*/
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+#segundoDiv{                        /*estilo del contenedor del logo*/
+    float:left;                                     /*ancho del div*/   
+    width: 110px;
+    height: 110px;
+    background-color: #e5d8cd;
+}
+
+#nav-links li{                      /*estilo para organizar el menu del navbar*/
+    display: inline-block;              /*organiza los nav en horizontal*/   
+    padding: 0 10px;                       
+    font-size: 60px;         
+}
+
+#nav-links {                        /*centrar a la izquierda el nav*/
+    text-align: right;
+}
+
+#nav-links a{                       /*estilo para la letra del navbar*/
+    color: rgb(66, 0, 0);
+    text-decoration: none;              /*inhabilito el subrayado*/   
+    font-family: 'Dancing Script';
+}
+
+#nav-links li:hover{            
+    transform: scale(1.1);              /*anima el texto al pasar el mouse*/   
+}
+
+#nav-links li a:hover{                  /*cambia el color del texto al pasar el mouse*/
+    color: darkolivegreen;
+}
+
+#cuartoDiv{                           /*estilo para el div principal de la pagina*/
+    background-color: rgb(255, 255, 255);   
+    width: 1990px;
+    height: 1080px;
+    display: flex;                  /*centra todos los elementos*/
+    background-attachment: fixed;
+    font-family: 'Dancing Script';                     /*tipo de letra*/
+    background-image: url(/assets/Images/pizza.jpg);          /*imagen de fondo de la pagina */
+    background-size: 100% 1080px;
+    color: #420000;
+    font-size: 90px ;                           /*tamaño de la letra*/
+    margin-left: 0px;                           /*margen de la izquierda*/
+}
+
+#cuartoDiv h1:hover{                    /*estilo de animación para el color de letra del titulo principal */
+    color: rgb(39, 82, 23); 
+    text-align: center;
+
+}
+h1{                                         /*estilo para el titulo principal*/
+    text-shadow: -2px 0 beige, 2px 0 beige;
+}
+
+#quintoDiv{                                 /*estilo del quinto div*/
+    background-color: #e5d8cd;
+    background-image: url(https://t4.ftcdn.net/jpg/03/75/52/07/360_F_375520708_lX6He5yfGPI4IYLaqIRUkEFr5lg3jhEK.jpg);/*imagen: pasta con un tenedor*/
+    background-size: 100% 1080px;
+    background-attachment: fixed;           /*efecto de imagen de fondo fijo*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 1990px;
+    height: 1080px;
+    display: grid;                                  /*asi se añade un grip*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;             /*organizo el grip en 3 partes*/
+    gap: 30px;                                      /*espacio entre cada division*/
+    margin: 15px;                                      /*margenes con la pagina*/
+    margin-left: 0px;
+    
+}
+
+#sextoDiv{                            /*estilo del sexto div*/
+    width: 300px;                                         /*ancho del div*/
+    text-align: center;                                  /*texto centrado*/
+    align-items: center;                                /*alinear elementos e imagenes*/
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+#septimoDiv{                            /*estilo del septimo div*/
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#octavoDiv{                             /*estilo del octavo div*/
+    width: 70%;
+    text-align: center;
+}
+
+h2{                                     /*estilo de letra del sexto y septimo div*/
+    color: rgb(44, 63, 11); 
+    font-family: 'Dancing Script';                           /*tipo de letra a titulos pequeños*/
+    text-align: center;
+}
+
+p{                                      /*estilo de los parrafos de texto de la pagina*/
+    font-family: 'Dancing Script';
+    text-align: center;
+}
+
+
+
+#novenoDiv{                         /*estilo para agregar imagen de fondo del carrusel*/                          
+    width: 1990px;
+    height: 1080px;
+    background-image: url(/assets/Images/FondoDeMesa.jpg);
+    background-size: 100% 1080px;
+    text-align: center;
+}
+
+#tituloMenu h2{
+    font-size: 60px;
+}
+
+.slider-wrapper{                    /*estilo para centrar y dar tamaño al contenedor del carrusel*/
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;   
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.slider{                            /*estilo para establecer horizontalmente las imagenes dentro de slider-wrapper  */
+    display: flex;
+    aspect-ratio: 16 / 9;                           /*relacion de tamaño de las imagenes*/  
+    overflow-x: hidden;                             /*cualquier elemento fuera del contenedor no se verá*/
+    scroll-snap-type: x mandatory;                  /*desplzar las imagenes con los botones*/
+    scroll-behavior: smooth;                        /*moviento entre las trancisiones*/
+    box-shadow: 0 .25rem .5rem #21212126;         /*establecer una sombra*/
+    border-radius:  .5rem;                          
+}
+
+.slider img{                        /*estilo para configurar tamaño de las imagenes del escroll*/
+    flex: 1 0 100%;                         
+    scroll-snap-align: start;               /*pocisiona el primer elemento del scroll*/
+    object-fit: cover;                      
+}
+
+.slider-nav{                        /*estilo para organizar los elementos del carrusel*/
+    display: flex;                                  /*organiza de mejor manera los elementos para configurarlos*/
+    column-gap: 1rem;                               
+    position: absolute;
+    bottom: 1.25rem;                                /*estilo de los botones*/
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {                      /*estilo para los botones del carrusel*/
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{                /*estilo para la opacidad de los botones*/
+    opacity: 100%;              
+}
+
+footer{                             /*estilo para todo el footer*/
+    background-color: #420000;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .container {                      /*estilo para el contenedor del footer*/
+    width: 100%;
+    height: 1080px;
+    margin: 50px;
+    margin-right: 0%;
+    display: flex;                  /*organiza los elementos dentro del contenedor*/
+    list-style: none;              /*eliminar los puntos de la lista*/
+    color: #e5d8cd;
+    gap: 300px;
+    font-size: 20px;
+  }
+  
+  .title {                          /*estilo del titulo del footer "mamma mia"*/
+    font-size: 50px;
+    font-style: 'Dancing Script';
+    color: #e5d8cd;
+  }
+  
+  .social-icons li {                /*estilo para el contenedor derecho del footer*/
+    display: inline-block;
+    margin: 10px;
+    color: aliceblue;
+  }
+  
+  .footer-right{                    /*ancho del contenedor derecho del footer*/
+    width: 800px;
+  }
+
+  .footer-right a{                  /*color de letra del footer*/
+    color: #e5d8cd;
+  }
+
+  .copyright {                      /*color de letra del copyrigth*/
+    font-size:14px;
+    color: #e5d8cd;
+}
+
+
+.footer-left li{                    /*color de letra  del contenedor izquierdo del footer*/
+    list-style: none;
+    color: aliceblue;
+}
+
+h3{                                 /*estilo del titulo "siguenos" del footer*/
+    font-size: 50px;
+    font-family: 'Dancing Script';
+    color: #e5d8cd;
+}
+
+.social-icons a{                    /*estilo para  lista de redes sociales del footer*/
+    color: #e5d8cd;
+    text-align: center;
+}
+
+.footer-left a{                     /*estilo del texto del contenedor izquierdo del footer*/
+    color: #e5d8cd;
+    text-align: center;
+}
+
+.footer-left p{                     /*tamaño del texto del contenedor izquierdo del footer*/
+    font-size: 20px;
+}
+
+.btnPedir{                          /*estilo del boton "pedir"*/
+    background-color: #420000;                              /* Color de fondo rojo */
+    color: white;                                           /* Color del texto */
+    border: none;                                           /* Sin borde */
+    border-radius: 5px;                                     /* Bordes redondeados */
+    padding: 10px 20px;                                     /* Espaciado interno */
+    font-size: 40px;                                        /* Tamaño de fuente */
+    cursor: pointer;                                        /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s;                      /*Efecto de transicion*/
+    align-items: center;
+}
+
+.btnPedir:hover {                   /*estilo de efectos del boton "pedir"*/
+    background-color: #146710;                          /* Color de fondo al pasar el mouse */
+}
+
+#novenoDiv h2{                      /*estilo del titulo "menu" del carrusel*/
+    font-size: 40px;
+    color: #420000;
+}
+
+.socialMediaP{                      /*estilo de letra del socialMedia*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonsNetwork{
+    position: fixed;            /*organiza los elementos verticalmente*/
+    top: 50%;                   /*altura de los botones en la pagina*/
+    left: 10px;
+}
+
+.buttonsNetwork_list{            /*estilo para el sticky social media*/
+    width: 50px;
+    height: 60px;
+    padding: 0 15px;
+    display: block;
+    box-shadow: 0 3px 6px rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #020202;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    background-color: #e5d8cd;
+}
+
+.buttonsNetwork_list p{         /*desaparece el texto junto al boton*/
+    display: none;
+}
+
+.buttonsNetwork_list:hover > p{             /*aparece el texto y el boton al pasar el mause*/
+    display: block;
+}
+
+.buttonsNetwork_list:hover{                 /*trancision de tamaño al pasar el hover*/
+    width: 100%;
+    padding: 0 10px;
+}
+
+.buttonsNetwork_list:hover:nth-child(1):hover{          /*estilo de color para el boton facebook*/
+    color: #4267B2;
+}
+
+.buttonsNetwork_list:hover:nth-child(2):hover{          /*estilo de color para el boton instagram*/
+    color: #6e15ea;
+}
+
+.buttonsNetwork_list:hover:nth-child(3):hover{          /*estilo de color para el boton gmail*/
+    color: #ea1527;
+}
+
+.buttonsNetwork_list:hover:nth-child(4):hover{          /*estilo de color para el boton whatsapp*/
+    color: #25D366;
+}
+
+.GaleryContenedor{                  /*estilo del contenedor de la galeria*/
+    width: 1920px;
+    height: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;               /*margen izquierdo del contenedor de la galeria*/
+    
+}
+
+.divGalery{                     /*estilo del div conformado por un grip de la galeria*/
+    width: 92%;
+    height: 100%;
+    background-color: #e5d8cd;
+    margin-left: 100px;
+    display: grid;                                   /*Añado el grid al div*/  
+    grid-template-columns: 3fr 3fr 3fr;              /*divide en zonas el grid*/
+    border-radius: 6px;
+    
+}
+
+.tituloGalery{              /*estilo del titulo de la galeria*/
+    width: 80%;
+    height: 60px;
+    font-size: 45px;
+    margin-left: 220px;
+}
+
+
+.galery1 .galery2 .galery3 .galery4 .galery5 .galery6{              /*estilo a los div de la galeria*/
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.galery1 figure{                                /*estilo de sombras a la galeria*/
+    position: relative;                         /*cambia el puntero por una mano*/
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    width: 500px;                                   /*ancho de la imagen 1 de la galeria*/
+    height: 500px;                                   /*altura de la imagen 1 de la galeria*/
+    margin-left: 50px;
+}
+
+.galery1 figure img{                /*estilo a la imagenes de la galeria*/
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.galery1 figure .capa{                  /*estilo a la transicion y visibilidad de la galeria*/
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(96, 52, 48, 0.76);
+    transition: all 500ms ease-out;         /*velocidad de transicion de la galeria*/
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.galery1 figure:hover > .capa{          /*visibilidad al texto*/
+    opacity: 1;
+    visibility: visible;
+}
+
+.capa h2{               /*estilo la galeria en las imagenes*/
+    color: #ffffff;
+    font-size: 60px;
+}
+
+/**/
+
+.galery2 figure{                                /*estilo de sombras a la galeria*/
+    position: relative;                         /*cambia el puntero por una mano*/
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+}
+
+.galery2 figure img{                /*estilo a la imagenes de la galeria*/
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.galery2 figure .capa{                  /*estilo a la transicion y visibilidad de la galeria*/
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(96, 52, 48, 0.76);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.galery2 figure:hover > .capa{          /*visibilidad al texto*/
+    opacity: 1;
+    visibility: visible;
+}
+
+/**/
+.galery3 figure{                                /*estilo de sombras a la galeria*/
+    position: relative;                         /*cambia el puntero por una mano*/
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+}
+
+.galery3 figure img{                /*estilo a la imagenes de la galeria*/
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.galery3 figure .capa{                  /*estilo a la transicion y visibilidad de la galeria*/
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(96, 52, 48, 0.76);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.galery3 figure:hover > .capa{          /*visibilidad al texto*/
+    opacity: 1;
+    visibility: visible;
+}
+
+/**/
+
+
+.galery4 figure{                                /*estilo de sombras a la galeria*/
+    position: relative;                         /*cambia el puntero por una mano*/
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+}
+
+.galery4 figure img{                /*estilo a la imagenes de la galeria*/
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.galery4 figure .capa{                  /*estilo a la transicion y visibilidad de la galeria*/
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(96, 52, 48, 0.76);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.galery4 figure:hover > .capa{          /*visibilidad al texto*/
+    opacity: 1;
+    visibility: visible;
+}
+
+/**/
+
+
+.galery5 figure{                                /*estilo de sombras a la galeria*/
+    position: relative;                         /*cambia el puntero por una mano*/
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+}
+
+.galery5 figure img{                /*estilo a la imagenes de la galeria*/
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.galery5 figure .capa{                  /*estilo a la transicion y visibilidad de la galeria*/
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(96, 52, 48, 0.76);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.galery5 figure:hover > .capa{          /*visibilidad al texto*/
+    opacity: 1;
+    visibility: visible;
+}
+
+/**/
+
+
+.galery6 figure{                                /*estilo de sombras a la galeria*/
+    position: relative;                         /*cambia el puntero por una mano*/
+    cursor: pointer;                            /*al pasar el mouse cambia el cursor*/
+    overflow: hidden;                       /*ocultar contenido si se exede del contenedor*/
+    border-radius: 6px;                     /*bordes mas redondeados del contenedor*/
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);      /*sombra en los bordes de la galeria*/
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;                  /*margen de la izquierda */
+}
+
+.galery6 figure img{                /*estilo a la imagenes de la galeria*/
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;              /* velocidad de transion entre la imagen y el texto de la galeria */
+}
+
+.galery6 figure .capa{                  /*estilo a la transicion y visibilidad de la galeria*/
+    position: absolute;
+    top: 0%;                    /*cuanto se desplazará verticalmente un elemento*/
+    width: 100%;
+    height: 100%;
+    background: rgba(96, 52, 48, 0.76);     /*color de fondo para los textos en transicion*/
+    transition: all 500ms ease-out;         /* velocidad de transion entre la imagen y el texto de la galeria */
+    opacity: 0;                     /*opacidad al pasar el mouse por la galeria*/
+    visibility: hidden;             /*ocultar el texto temporalmente*/
+    text-align: center;
+}
+
+.galery6 figure:hover > .capa{          /*visibilidad al texto*/
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Conjuntos de estilos de la caluladora de calorias */
+
+.divCalculadora{
+    width: 1950px;
+    background-color: #e5d8cd;
+    color: #7c0d0d;
+    padding: 20px;                          /*espacio entre el contenedor y los objetos dentro*/
+    background-image: url(/assets/Images/roma2.jpeg);
+    background-attachment: fixed;           /*efecto de imagen de fondo fijo*/
+    background-size: 100% auto;             /*tamaño de la imagen de fondo(ancho, largo)*/
+    background-repeat: no-repeat;           /*no repite imagenes de fondo*/
+    height: auto;                   /*ancho del div automatico*/
+    margin-right: 0%;               /*margen de la derecha del div*/
+}
+
+.containerCalculadora {             /*estilos para el contenedor de la calculadora*/
+    max-width: 900px;               /*ancho maximo del contenedor*/
+    margin: auto;                   /*margen  automatico*/
+    background: rgba(236, 189, 119, 0.79);          /*color del contenedor con una ligera transparencia*/
+    padding: 20px;                      /*espacio entre el contenedor y los objetos dentro*/
+    border-radius: 5px;                         /*bordes mas redondeados del contenedor*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);        /*sobras oscuras en los bordes del contenedor*/
+    align-items: center;            /*centrar elementos dentro del contenedor*/
+}
+
+
+.tituloCalculadora h1, h2 {         /*estilos de los titulos del div de la calculadora*/
+    color: #610707;
+    font-size: 30px;
+    font-family: 'Dancing Script';
+    text-align: center;
+     text-shadow: 0px 0 #000000, 0px  0;
+}
+
+.containerCalculadora p{        /*estilos para el contenedor de la calculadora*/
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.select option{             /*estilos para centrar las opciones de recetas*/
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;                 /*borde entre el contenedor y los objetos dentro*/
+    margin: 5px;                        /*borde exterior del boton*/
+    background-color: #540808;
+    color: #efc697;
+    border: none;           /*sin bordes*/
+    border-radius: 5px;             /*bordes mas redondeados del contenedor*/
+    cursor: pointer;            /*al pasar el mouse cambia el cursor*/
+    width: 200px;
+    font-size: 30px;
+    font-family: 'Dancing Script';
+}
+
+button:hover {
+    background-color: #1f4613;          /*cambio de color en los botones*/
+}
+
+/* Nueva regla para centrar los botones */
+#ingredientesRelacionados {
+    display: flex;              /*ordenas objetos de forma flexible*/
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los botones horizontalmente */
+    color: #8b0e0e;
+}
+
+#ingredientesRelacionados button {
+    margin: 10px; /* Espaciado entre botones */
+    color: #fecb92;
+}
+
+/* Nueva regla para centrar el select */
+#listaRecetas {
+    display: flex;          /*ordenas objetos de forma flexible*/
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    
+}
+
+#recetas {
+    margin: 10px; /* Espaciado alrededor del select */
+    padding: 10px; /* Espaciado interno del select */
+    border: 1px solid #fecb92; /* Borde del select */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 400px; /* Ancho del select */
+    font-size: 30px;
+    color: #efc697;
+    background-color: #540808;
+    font-family: 'Dancing Script';
+    text-align: center;
+}
+
+#texfieldPorciones{
+    display: flex;                  /*ordenas objetos de forma flexible*/
+    flex-direction: column;             /*sub contenedores se ordenaran verticalmente*/
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center;
+}
+
+#texfieldPorciones option{          /*tamaño de letra del textfield porciones*/
+    font-size: 30px;
+}
+
+/* estilos para el input de porciones */
+#porciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    height: 30px;
+    font-size: 30px;
+    color: #fecb92;
+    background-color: #540808;
+    border: 1px solid #fecb92; /* Borde del select */
+    text-align: center;
+    width: 100px;
+}
