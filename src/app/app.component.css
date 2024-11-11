@@ -53,7 +53,7 @@ body{                               /*estilo del body*/
     display: flex;                  /*centra todos los elementos*/
     background-attachment: fixed;
     font-family: 'Dancing Script';                     /*tipo de letra*/
-    background-image: url(/assets/Images/pizza.jpg);          /*imagen de fondo de la pagina */
+    background-image: url(/src/assets/pizza.jpg);          /*imagen de fondo de la pagina */
     background-size: 100% 1080px;
     color: #420000;
     font-size: 90px ;                           /*tamaño de la letra*/
@@ -122,7 +122,7 @@ p{                                      /*estilo de los parrafos de texto de la 
 #novenoDiv{                         /*estilo para agregar imagen de fondo del carrusel*/                          
     width: 1990px;
     height: 1080px;
-    background-image: url(/assets/Images/FondoDeMesa.jpg);
+    background-image: url(/assets/FondoDeMesa.jpg);
     background-size: 100% 1080px;
     text-align: center;
 }
@@ -592,7 +592,7 @@ h3{                                 /*estilo del titulo "siguenos" del footer*/
     background-color: #e5d8cd;
     color: #7c0d0d;
     padding: 20px;                          /*espacio entre el contenedor y los objetos dentro*/
-    background-image: url(/assets/Images/roma2.jpeg);
+    background-image: url(/assets/roma2.jpeg);
     background-attachment: fixed;           /*efecto de imagen de fondo fijo*/
     background-size: 100% auto;             /*tamaño de la imagen de fondo(ancho, largo)*/
     background-repeat: no-repeat;           /*no repite imagenes de fondo*/
