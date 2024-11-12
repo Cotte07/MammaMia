@@ -10,45 +10,46 @@
 <br>
 <br>
 <br> <!--espacio para separar el contenido del navbar-->
-<div class="progress ">
+<div class="progress "><!--Barra de progreso-->
     <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
     </div>
 </div>
 <br>
 <br>
 <br>
-    <div class=""><h1 class="color1 text-center">Crea tu propia pizza</h1></div>
+    <div class=""><h1 class="color1 text-center">Crea tu propia pizza</h1></div><!--Titulo principal-->
     <div>
         <div class="col-6">
             <h2 class="color1"> Elije un nombre :</h2>
         </div>
         <div class="col-6">
-            <input class="form-control"  type="input" placeholder="Escribe un nombre">
+            <input class="form-control"  type="input" placeholder="Escribe un nombre"><!--Insertar nombre de pizza-->
         </div>
     </div>
     <div>
         <h1 class="color1 text-align-left">Selecciona un tipo de masa: </h1>
+        <!--Opciones de masa-->
         <div class="row">
             <div class="col-4">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" for="btnradio1">Queso 1</label>
+                <label class="btn btn-outline-primary" for="btnradio1">Masa delgada</label>
             </div>
             <div class="col-4">
                 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" for="btnradio2">Queso 2</label>
+                <label class="btn btn-outline-primary" for="btnradio2">Masa gruesa</label>
                 <img src="" alt="">
 
             </div>
             <div class="col-4">
                 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" for="btnradio3">Queso 3</label>
+                <label class="btn btn-outline-primary" for="btnradio3">Masa integral</label>
                 <img src="" alt="">
 
             </div>
         </div>
-        <div class="row">
+        <div class="row"> <!--Filas para agregar imagenes-->
             <div class="col-4">
                 <img class="tamanoImages" src="https://images.pexels.com/photos/28866007/pexels-photo-28866007/free-photo-of-preparacion-de-masa-de-pizza-artesanal-con-luz-natural.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imgMasa1">
             </div>
@@ -63,29 +64,86 @@
 
     <div>
         <h1 class="color1 text-align-left">Selecciona el tipo de queso: </h1>
-
+        <!--Opciones de queso-->
+        <div class="row">
+            <div class="col-3">
+                <input type="radio" class="btn-check" name="Cheese" id="queso1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="queso1">Queso Mozarella</label>
+            </div>
+            <div class="col-3">
+                <input type="radio" class="btn-check" name="Cheese" id="queso2" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="queso2">Queso Cheddar</label>
+            </div>
+            <div class="col-3">
+                <input type="radio" class="btn-check" name="Cheese" id="queso3" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="queso3">Queso Parmesano</label>
+            </div>
+            <div class="col-3">
+                <input type="radio" class="btn-check" name="Cheese" id="queso4" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="queso4">Queso Azul</label>
+            </div>
+        </div>
+        <div class="row"><!--Filas para agregar imagenes-->
+            <div class="col-3">
+                <img class="tamanoImages" src="https://www.lavanguardia.com/files/article_main_microformat/uploads/2019/01/14/5e997adde64f0.jpeg" alt="imgQueso1">
+            </div>
+            <div class="col-3">
+                <img class="tamanoImages" src="https://imarkt.co/wp-content/uploads/2021/04/Queso-Cheddar-a-Domicilio-en-Bogota.jpg" alt="imgQueso2">
+            </div>
+            <div class="col-3">
+                <img class="tamanoImages" src="https://mygourmet.com.mx/wp-content/uploads/2022/04/queso-parmesano-uruguayo.webp" alt="imgQueso3">
+            </div>
+            <div class="col-3">
+                <img class="tamanoImages" src="https://alpina.com/media/mageplaza/blog/post/t/o/todo-lo-que-necesitas-saber-del-queso-azul_1_.jpg" alt="imgQueso4">
+            </div>
+        </div>
     </div>
 
     <div>
-        <h1 class="color1 text-align-left">Agrega vegetales: </h1>
-
+        <h1 class="color1 text-align-left">Agrega un Tipo de carne: </h1>
+        <!--Opciones de carnes-->
+        <div class="row">
+            <div class="col-4">
+                <input type="radio" class="btn-check" name="Meat" id="carne1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="carne1">Carne de Res</label>
+            </div>
+            <div class="col-4">
+                <input type="radio" class="btn-check" name="Meat" id="carne2" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="carne2">Pollo</label>
+            </div>
+            <div class="col-4">
+                <input type="radio" class="btn-check" name="Meat" id="carne3" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="carne3">Cerdo</label>
+            </div>
+        </div>
+        <div class="row"><!--Filas para agregar imagenes-->
+            <div class="col-4">
+                <img class="tamanoImages" src="https://thefoodtech.com/wp-content/uploads/2020/05/carne-de-res.jpg" alt="imgCarne1">
+            </div>
+            <div class="col-4">
+                <img class="tamanoImages" src="https://i0.wp.com/www.buenossaborespanama.com/wp-content/uploads/2023/03/shredded-chicken-2023-03-02-03-44-31-utc-scaled.jpg?fit=2560%2C1707&ssl=1" alt="imgCarne2">
+            </div>
+            <div class="col-4">
+                <img class="tamanoImages" src="https://www.divinacocina.es/wp-content/uploads/lomo-de-cerdo-asado-entero.jpg" alt="imgCarne3">
+            </div>
+        </div>
     </div>
 
-    <div>
+    <div><!--Opciones de especias-->
         <h1 class="color1 text-align-left">Selecciona especias: </h1>
 
     </div>
 
-    <div>
-        <h1 class="color1 text-align-left">Selecciona un tipo de carne: </h1>
+    <div><!--Opciones de vegetales-->
+        <h1 class="color1 text-align-left">Selecciona un tipo de vegetales: </h1>
 
     </div>
 
-    <div>
+    <div><!--Opciones de toppings-->
         <h1 class="color1 text-align-left">Selecciona un toppings: </h1>
 
     </div>
-    <div class="centrarItem">
+    <div class="centrarItem"> <!--Boton para agregar productos seleccionados-->
         <button class="btn btn-warning" type="button">
             <h2>  Agregar Ingredientes</h2>
         </button>
