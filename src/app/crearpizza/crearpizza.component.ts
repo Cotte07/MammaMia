@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-crearpizza',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
   templateUrl: './crearpizza.component.html',
   styleUrl: './crearpizza.component.css'
 })
-export class CrearpizzaComponent {
+
+export class CrearPizzaComponent   {
 
 }

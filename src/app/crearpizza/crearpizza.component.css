@@ -1,0 +1,19 @@
+.div1{
+    background-color: #e5d8cd;
+    margin-left : 150px;
+    margin-right: 50px;
+}
+
+.color1{
+    color: rgb(66, 0, 0);
+    font-size: 60px;
+}
+
+.centrarItem {
+    display: inline;
+    justify-items: center;
+}
+.tamanoImages{
+    width: 500px;
+    height: 500px;
+}
